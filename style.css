@@ -34,9 +34,19 @@ section {
   /* height: 450px; */
 }
 
-.work img {
+.one img {
   height: 150pt;
-  width: 100pt;
+  width: 200pt;
+}
+
+.two img {
+  height: 150pt;
+  width: 300pt;
+}
+
+.three img {
+  height: 170pt;
+  width: 300pt;
 }
 
 body footer {
