@@ -20,18 +20,31 @@ section {
 .raul {
   border: solid black 2px;
   padding: 5px;
+  /* height: 450px; */
+}
+
+.raul img {
+  height: 150pt;
+  width: 100pt;
 }
 
 .work {
   border: solid black 2px;
   padding: 5px;
+  /* height: 450px; */
+}
+
+.work img {
+  height: 150pt;
+  width: 100pt;
 }
 
 body footer {
   text-align: center;
 }
 
-img {
+.social-links img {
+  margin-right: 10px;
   height: 20pt;
   width: 20pt;
 }
@@ -39,6 +52,7 @@ img {
 .credit {
   font-size: 8pt;
 }
+
 a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
