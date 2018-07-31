@@ -68,22 +68,30 @@ header {
 }
 
 /* Scrolling: jsfiddle.net/YYPKM/5911 */
+.anchor {
+  z-index: 0;
+  -webkit-transform: translateZ( 0);
+  transform: translateZ( 0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+}
 
-a[ id="about"]:target~main section.raul {
+a[ id="about"]:target~main section#about {
   -webkit-transform: translateY( 0px);
   transform: translateY( 0px);
 }
 
-a[ id="projects"]:target~main section.work {
+a[ id="projects"]:target~main section#projects {
   -webkit-transform: translateY( -100%);
   transform: translateY( -100%);
 }
 
-a[ id="contact"]:target~main p.social-links {
+a[ id="contact"]:target~main section#contact {
   -webkit-transform: translateY( -200%);
   transform: translateY( -200%);
 }
 
+/*********************************/
 
 main {
   /* display: grid;
@@ -113,7 +121,7 @@ main {
   /* height: 450px; */
 }
 
-#one img {
+/* #one img {
   height: 150pt;
   width: 200pt;
 }
@@ -126,6 +134,10 @@ main {
 #three img {
   height: 170pt;
   width: 300pt;
+} */
+
+#contact {
+  text-align: center;
 }
 
 body footer {
