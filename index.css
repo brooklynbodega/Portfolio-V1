@@ -1,5 +1,6 @@
 html {
   font-family: 'Pontano Sans', sans-serif;
+  background-color: white;
 }
 
 h2 {
@@ -24,8 +25,9 @@ section {
 }
 
 .raul img {
-  height: 150pt;
-  width: 100pt;
+  height: 300pt;
+  width: 200pt;
+  background-blend-mode: color;
 }
 
 .work {
