@@ -6,6 +6,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 ol, ul {
@@ -25,15 +28,15 @@ html {
 }
 
 header {
+  text-align: center;
   margin: 15px;
+  background-color: rgb(222, 218, 218);
+  border: 2px solid black;
 }
 
 .nav {
   font-family: 'Hind', sans-serif;
-  text-align: center;
   padding: 10px;
-  background-color: rgb(222, 218, 218);
-  border: 2px solid black;
 }
 
 .nav a {
@@ -43,16 +46,44 @@ header {
   border: 2px solid rgba(50, 50, 50, 1);
   border-radius: 10px;
   padding: 5px;
+  transition: all .3s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
 }
 
 .nav a:-webkit-any-link {
   color: rgb(255, 138, 171);
+  transition: all .3s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
 }
 
 .nav a:hover {
   font-weight: 900;
   background-color: rgb(255, 244, 244);
 }
+
+/* Scrolling: jsfiddle.net/YYPKM/5911 */
+
+a[ id="about"]:target~main section.raul {
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px);
+}
+
+a[ id="projects"]:target~main section.work {
+  -webkit-transform: translateY( -100%);
+  transform: translateY( -100%);
+}
+
+a[ id="contact"]:target~main p.social-links {
+  -webkit-transform: translateY( -200%);
+  transform: translateY( -200%);
+}
+
 
 main {
   /* display: grid;
@@ -63,36 +94,36 @@ main {
   margin: 5px;
 }
 
-.raul {
+#raul {
   border: solid black 2px;
   padding: 5px;
   /* height: 450px; */
 }
 
-.raul img {
+#raul img {
   height: 300pt;
   width: 200pt;
   background-blend-mode: color;
 }
 
-.work {
+#work {
   border: solid black 2px;
   padding: 5px;
   margin-top: 5px;
   /* height: 450px; */
 }
 
-.one img {
+#one img {
   height: 150pt;
   width: 200pt;
 }
 
-.two img {
+#two img {
   height: 150pt;
   width: 300pt;
 }
 
-.three img {
+#three img {
   height: 170pt;
   width: 300pt;
 }
@@ -101,13 +132,13 @@ body footer {
   text-align: center;
 }
 
-.social-links img {
+#social-links img {
   margin-right: 10px;
   height: 20pt;
   width: 20pt;
 }
 
-.credit {
+#credit {
   font-size: 8pt;
 }
 
