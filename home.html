@@ -11,19 +11,18 @@
 </head>
 
 <body>
-<header>
-<h1>Raúl Montero || Web Developer</h1>
-  <div class="nav">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="./images/resume-01.pdf">Résumé</a>
-  </div>
-</header>
+  <header>
+    <h1>Raúl Montero || Web Developer</h1>
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
   <main>
-    <section id="raul">
+    <section class="raul" id="about">
       <!-- <img src="./images/profile-photo-01.jpg" alt="profile-photo"> -->
-      <h3 id="about" class="anchor">Brooklyn, NY</h3>
+      <h3>Brooklyn, NY</h3>
       <p>As a burgeoning developer and proponent of social justice, my passion is to create accessible applications with code
         that is composed and discernible. Utilizing my administrative experience, I enjoy strategizing paths to success and
         encourage constructive communication to produce work of the highest quality. I strive to immerse myself with a brand
@@ -35,8 +34,9 @@
         <li>Git, Github</li>
       </ul>
     </section>
-    <section id="work">
-      <h2 id="projects" class="anchor">Projects</a></h2>
+    <section class="work" id="projects">
+      <h2>Projects</a>
+      </h2>
       <div class="project" id="one">
         <h3>
           <a href="https://brooklynbodega.github.io/Project-01/">
@@ -62,8 +62,8 @@
         </h3>
       </div>
     </section>
-    <section id="contact">
-      <h2 class="anchor" id="contact">Contact</h2>
+    <section class="footer" id="contact">
+      <h2>Contact</h2>
       <p id="social-links">
         <a href="https://www.facebook.com/montero.raul">
           <img src="./images/facebook-logo.svg" alt="facebook">
@@ -77,10 +77,10 @@
         <a href="mailto:raul.amontero@gmail.com">
           <img src="./images/gmail-logo.svg" alt="gmail">
         </a>
-       </p>
+      </p>
     </section>
   </main>
-  <footer>
+  <section>
     <p>© 2018 Raúl Montero</p>
     <div id="credit">
       Icons made by
@@ -89,10 +89,11 @@
       <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
     </div>
     </p>
-  </footer>
+  </section>
 </body>
 <footer>
-  <!-- <script src="./main.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./main.js"></script>
 </footer>
-
 </html>
