@@ -1,10 +1,10 @@
 console.log("working");
 
 
-/* Code taken from: */
+/* Used code from: https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { stickyHeader() };
 
 // Get the header
 let nav = document.getElementById("nav");
@@ -13,7 +13,7 @@ let nav = document.getElementById("nav");
 let sticky = nav.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function stickyHeader() {
   if (window.pageYOffset > sticky) {
     nav.classList.add("sticky");
   } else {
@@ -21,7 +21,7 @@ function myFunction() {
   }
 }
 
-/* Code taken from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+/* Used code from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
 
 // Select all links with hashes
 $('a[href*="#"]')
