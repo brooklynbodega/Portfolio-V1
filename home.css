@@ -30,16 +30,31 @@ html {
 header {
   text-align: center;
   margin: 15px;
-  background-color: rgb(222, 218, 218);
+  /* position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1; */
   border: 2px solid black;
 }
 
-.nav {
-  font-family: 'Hind', sans-serif;
-  padding: 10px;
+header h1 {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: rgb(254, 209, 209);
 }
 
-.nav a {
+#nav {
+  font-family: 'Hind', sans-serif;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px 0;
+  background-color: rgb(254, 209, 209);
+  z-index: 1;
+}
+
+#nav a {
   display: inline;
   margin-right: 5px;
   color: rgb(255, 138, 171);
@@ -48,13 +63,20 @@ header {
   padding: 5px;
 }
 
-.nav a:-webkit-any-link {
+#nav a:-webkit-any-link {
   color: rgb(255, 138, 171);
 }
 
-.nav a:hover {
+#nav a:hover {
   font-weight: 900;
   background-color: rgb(255, 244, 244);
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 main {
@@ -68,16 +90,23 @@ main {
   padding: 5px;
 }
 
-.raul img {
+/* .raul img {
   height: 300pt;
   width: 200pt;
   background-blend-mode: color;
-}
+} */
 
 .work {
   border: solid black 2px;
   padding: 5px;
   margin-top: 5px;
+}
+
+.work img {
+  border: solid rgb(103, 91, 106) 2px;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: rgb(141, 180, 200);
 }
 
 /* #one img {
@@ -99,7 +128,7 @@ main {
   text-align: center;
 }
 
-body footer {
+#footer {
   text-align: center;
 }
 
