@@ -1,6 +1,14 @@
 console.log("working");
 
+/* On hover of image */
 
+// let skillsImage = document.getElementsByClassName("skills-image");
+
+// function imageShake() {
+//   if (condition) {
+    
+//   }
+// }
 /* Used code from: https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 
 // When the user scrolls the page, execute myFunction 
@@ -58,3 +66,4 @@ $('a[href*="#"]')
       }
     }
   });
+
