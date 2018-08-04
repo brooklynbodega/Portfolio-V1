@@ -1,18 +1,12 @@
 console.log("working");
 
-/* On hover of image */
+/* STICKY HEADER Used code from: https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 
-// let skillsImage = document.getElementsByClassName("skills-image");
-
-// function imageShake() {
-//   if (condition) {
-    
-//   }
-// }
-/* Used code from: https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function () { stickyHeader() };
+window.onscroll = function () {
+  stickyHeader()
+};
 
 // Get the header
 let nav = document.getElementById("nav");
@@ -29,7 +23,7 @@ function stickyHeader() {
   }
 }
 
-/* Used code from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+/* SMOOTH SCROLL Used code from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -66,4 +60,3 @@ $('a[href*="#"]')
       }
     }
   });
-
